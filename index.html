@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>ZeitPin</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="timeLeft">ZeitPin</h1>
+      <div class="sliderContainer">
+        <label for="time" id="current">25</label>
+        <input type="range" min="1" max="60" value="25" class="slider" id="time" name="time">
+      </div>
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <br/><label for="showSeconds">Sekunden im Icon anzeigen</label>
+      <input type="checkbox" id="showSeconds" name="showSeconds">
+      <br/><label for="color">Farbe des Icon</label>
+      <input type="color" id="color" name="color" value="#27ae60" />
+    </main>
+    <footer>
+      <button id="info">
+        info
+      </button>
+      <section id="hidden-info">
+        <p>
+          Dies ist ein Mini-Timer von <a href="https://twitter.com/aTylerRobertson">Tyler Robertson</a>, der die Zeit in einem Browser-Tab anzeigt.
+        </p>
+        <p>
+          Das Tool ist dazu gedacht, in einem <b>angehefteten Tab</b> verwendet zu werden. Auf diese Weise hat man die Zeit direkt im Blick. Um ein Browser-Tab anzuheften, klickst Du mit der rechten Maustaste daraus und wählst 'Tab anheften'.
+        </p>
+        <p>
+          Das Tool ist mit <a href="https://glitch.com">Glitch</a> erstellt,<br/>du kannst den Code <a href="https://glitch.com/~pin-tab-pomo">hier</a> ansehen oder remixen!
+        </p>
+      </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
